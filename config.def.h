@@ -91,7 +91,7 @@ static char *colors[][ColCount] = {
 
 
 
-static const char *layoutmenu_cmd = "layoutmenu.sh";
+static const char *layoutmenu_cmd = "/home/mhmd/suckless/dwm/layoutmenu.sh";
 
 
 
@@ -372,7 +372,7 @@ static Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask           button          function        argument */
-	{ ClkButton,            0,                   Button1,        spawn,          {.v = dmenucmd } },
+	{ ClkButton,            0,                   Button1,        spawn,          SHCMD("/home/mhmd/scripts/xmenu/xmenu-powermenu.sh") },
 	{ ClkLtSymbol,          0,                   Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,                   Button3,        layoutmenu,     {0} },
 	{ ClkWinTitle,          0,                   Button2,        zoom,           {0} },

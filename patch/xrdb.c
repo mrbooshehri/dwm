@@ -20,7 +20,7 @@ loadxrdb()
 				XRDB_LOAD_COLOR("dwm.color0", normbgcolor);
 				XRDB_LOAD_COLOR("dwm.color8", normbordercolor);
 				XRDB_LOAD_COLOR("dwm.color5", normfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", selfgcolor);
+				XRDB_LOAD_COLOR("dwm.color0", selfgcolor);
 				XRDB_LOAD_COLOR("dwm.color10", selbgcolor);
 				XRDB_LOAD_COLOR("dwm.color7", selbordercolor);
 				XRDB_LOAD_COLOR("dwm.color7", selfloatcolor);
@@ -28,7 +28,7 @@ loadxrdb()
 				XRDB_LOAD_COLOR("dwm.color0", titlenormbgcolor);
 				XRDB_LOAD_COLOR("dwm.color8", titlenormbordercolor);
 				XRDB_LOAD_COLOR("dwm.color5", titlenormfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", titleselfgcolor);
+				XRDB_LOAD_COLOR("dwm.color0", titleselfgcolor);
 				XRDB_LOAD_COLOR("dwm.color10", titleselbgcolor);
 				XRDB_LOAD_COLOR("dwm.color7", titleselbordercolor);
 				XRDB_LOAD_COLOR("dwm.color7", titleselfloatcolor);
@@ -36,12 +36,12 @@ loadxrdb()
 				XRDB_LOAD_COLOR("dwm.color0", tagsnormbgcolor);
 				XRDB_LOAD_COLOR("dwm.color8", tagsnormbordercolor);
 				XRDB_LOAD_COLOR("dwm.color5", tagsnormfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", tagsselfgcolor);
+				XRDB_LOAD_COLOR("dwm.color0", tagsselfgcolor);
 				XRDB_LOAD_COLOR("dwm.color10", tagsselbgcolor);
 				XRDB_LOAD_COLOR("dwm.color7", tagsselbordercolor);
 				XRDB_LOAD_COLOR("dwm.color7", tagsselfloatcolor);
 				XRDB_LOAD_COLOR("dwm.color10", hidfgcolor);
-				XRDB_LOAD_COLOR("dwm.color7", hidbgcolor);
+				XRDB_LOAD_COLOR("dwm.color0", hidbgcolor);
 				XRDB_LOAD_COLOR("dwm.color10", hidbordercolor);
 				XRDB_LOAD_COLOR("dwm.color11", hidfloatcolor);
 				XRDB_LOAD_COLOR("dwm.color7", urgfgcolor);
