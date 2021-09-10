@@ -12,22 +12,22 @@ click_statuscmd_text(Arg *arg, int rel_x, char *text)
 	int i = -1;
 	int x = 0;
 	char ch;
-	dwmblockssig = -1;
+	statussig = -1;
 	while (text[++i]) {
 		if ((unsigned char)text[i] < ' ') {
 			ch = text[i];
 			text[i] = '\0';
-			x += status2dtextlength(text);
+			x += TEXTWM(text) - lrpad;
 			text[i] = ch;
 			text += i+1;
 			i = -1;
-			if (x >= rel_x && dwmblockssig != -1)
+			if (x >= rel_x && statussig != -1)
 				break;
-			dwmblockssig = ch;
+			statussig = ch;
 		}
 	}
-	if (dwmblockssig == -1)
-		dwmblockssig = 0;
+	if (statussig == -1)
+		statussig = 0;
 	return ClkStatusText;
 }
 
@@ -43,3 +43,4 @@ copyvalidchars(char *text, char *rawtext)
 	}
 	text[j] = '\0';
 }
+

@@ -72,3 +72,4 @@ click_tags(Bar *bar, Arg *arg, BarArg *a)
 	}
 	return ClkTagBar;
 }
+

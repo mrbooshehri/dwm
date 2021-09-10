@@ -179,3 +179,4 @@ wintosystrayicon(Window w)
 	for (i = systray->icons; i && i->win != w; i = i->next);
 	return i;
 }
+

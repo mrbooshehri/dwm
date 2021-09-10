@@ -159,12 +159,12 @@ static void
 getgaps(Monitor *m, int *oh, int *ov, int *ih, int *iv, unsigned int *nc)
 {
 	unsigned int n, oe, ie;
-	oe = ie = selmon->pertag->enablegaps[selmon->pertag->curtag];
+	oe = ie = enablegaps;
 	Client *c;
 
 	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
-	if (smartgaps && n == 1) {
-		oe = 0; // outer gaps disabled when only one client
+	if (n == 1) {
+		oe *= smartgaps_fact; // outer gaps disabled or multiplied when only one client
 	}
 
 	*oh = m->gappoh*oe; // outer horizontal gap
@@ -173,3 +173,4 @@ getgaps(Monitor *m, int *oh, int *ov, int *ih, int *iv, unsigned int *nc)
 	*iv = m->gappiv*ie; // inner vertical gap
 	*nc = n;            // number of clients
 }
+

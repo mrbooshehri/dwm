@@ -32,3 +32,4 @@ updatemotifhints(Client *c)
 		XFree(p);
 	}
 }
+

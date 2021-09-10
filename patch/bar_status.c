@@ -17,3 +17,4 @@ click_status(Bar *bar, Arg *arg, BarArg *a)
 {
 	return ClkStatusText;
 }
+

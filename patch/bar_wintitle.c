@@ -9,9 +9,10 @@ draw_wintitle(Bar *bar, BarArg *a)
 {
 	int x = a->x + lrpad / 2, w = a->w - lrpad / 2;
 	Monitor *m = bar->mon;
+	Client *c = m->sel;
 	int pad = lrpad / 2;
 
-	if (!m->sel) {
+	if (!c) {
 		drw_setscheme(drw, scheme[SchemeTitleNorm]);
 		drw_rect(drw, x, a->y, w, a->h, 1, 1);
 		return 0;
@@ -19,10 +20,12 @@ draw_wintitle(Bar *bar, BarArg *a)
 
 	drw_setscheme(drw, scheme[m == selmon ? SchemeTitleSel : SchemeTitleNorm]);
 	XSetErrorHandler(xerrordummy);
-	drw_text(drw, x, a->y, w, a->h, pad, m->sel->name, 0, False);
+
+	drw_text(drw, x, a->y, w, a->h, pad, c->name, 0, False);
+
 	XSync(dpy, False);
 	XSetErrorHandler(xerror);
-	drawstateindicator(m, m->sel, 1, x, a->y, w, a->h, 0, 0, m->sel->isfixed);
+	drawstateindicator(m, c, 1, x, a->y, w, a->h, 0, 0, c->isfixed);
 	return 1;
 }
 
@@ -31,5 +34,4 @@ click_wintitle(Bar *bar, Arg *arg, BarArg *a)
 {
 	return ClkWinTitle;
 }
-
 

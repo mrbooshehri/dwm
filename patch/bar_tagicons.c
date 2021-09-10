@@ -8,3 +8,4 @@ tagicon(Monitor *m, int tag)
 		return tagicons[ALTERNATIVE_TAGS][tagindex];
 	return tagicons[DEFAULT_TAGS][tagindex];
 }
+

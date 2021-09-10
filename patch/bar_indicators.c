@@ -101,3 +101,4 @@ drawstateindicator(Monitor *m, Client *c, unsigned int occ, int x, int y, int w,
 	else
 		drawindicator(m, c, occ, x, y, w, h, tag, filled, invert, tiledindicatortype);
 }
+
