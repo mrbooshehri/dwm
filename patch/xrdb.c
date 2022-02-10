@@ -16,35 +16,38 @@ loadxrdb()
 			xrdb = XrmGetStringDatabase(resm);
 
 			if (xrdb != NULL) {
-
-				XRDB_LOAD_COLOR("dwm.color7", normfgcolor);
-				XRDB_LOAD_COLOR("dwm.color0", normbgcolor);
-				XRDB_LOAD_COLOR("dwm.color8", normbordercolor);
-				XRDB_LOAD_COLOR("dwm.color5", normfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color0", selfgcolor);
-				XRDB_LOAD_COLOR("dwm.color10", selbgcolor);
-				XRDB_LOAD_COLOR("dwm.color7", selbordercolor);
-				XRDB_LOAD_COLOR("dwm.color7", selfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", titlenormfgcolor);
-				XRDB_LOAD_COLOR("dwm.color0", titlenormbgcolor);
-				XRDB_LOAD_COLOR("dwm.color8", titlenormbordercolor);
-				XRDB_LOAD_COLOR("dwm.color5", titlenormfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color0", titleselfgcolor);
-				XRDB_LOAD_COLOR("dwm.color10", titleselbgcolor);
-				XRDB_LOAD_COLOR("dwm.color7", titleselbordercolor);
-				XRDB_LOAD_COLOR("dwm.color7", titleselfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", tagsnormfgcolor);
-				XRDB_LOAD_COLOR("dwm.color0", tagsnormbgcolor);
-				XRDB_LOAD_COLOR("dwm.color8", tagsnormbordercolor);
-				XRDB_LOAD_COLOR("dwm.color5", tagsnormfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color0", tagsselfgcolor);
-				XRDB_LOAD_COLOR("dwm.color10", tagsselbgcolor);
-				XRDB_LOAD_COLOR("dwm.color7", tagsselbordercolor);
-				XRDB_LOAD_COLOR("dwm.color7", tagsselfloatcolor);
-				XRDB_LOAD_COLOR("dwm.color7", urgfgcolor);
-				XRDB_LOAD_COLOR("dwm.color9", urgbgcolor);
-				XRDB_LOAD_COLOR("dwm.color9", urgbordercolor);
-				XRDB_LOAD_COLOR("dwm.color9", urgfloatcolor);
+				XRDB_LOAD_COLOR("dwm.normfgcolor", normfgcolor);
+				XRDB_LOAD_COLOR("dwm.normbgcolor", normbgcolor);
+				XRDB_LOAD_COLOR("dwm.normbordercolor", normbordercolor);
+				XRDB_LOAD_COLOR("dwm.normfloatcolor", normfloatcolor);
+				XRDB_LOAD_COLOR("dwm.selfgcolor", selfgcolor);
+				XRDB_LOAD_COLOR("dwm.selbgcolor", selbgcolor);
+				XRDB_LOAD_COLOR("dwm.selbordercolor", selbordercolor);
+				XRDB_LOAD_COLOR("dwm.selfloatcolor", selfloatcolor);
+				XRDB_LOAD_COLOR("dwm.titlenormfgcolor", titlenormfgcolor);
+				XRDB_LOAD_COLOR("dwm.titlenormbgcolor", titlenormbgcolor);
+				XRDB_LOAD_COLOR("dwm.titlenormbordercolor", titlenormbordercolor);
+				XRDB_LOAD_COLOR("dwm.titlenormfloatcolor", titlenormfloatcolor);
+				XRDB_LOAD_COLOR("dwm.titleselfgcolor", titleselfgcolor);
+				XRDB_LOAD_COLOR("dwm.titleselbgcolor", titleselbgcolor);
+				XRDB_LOAD_COLOR("dwm.titleselbordercolor", titleselbordercolor);
+				XRDB_LOAD_COLOR("dwm.titleselfloatcolor", titleselfloatcolor);
+				XRDB_LOAD_COLOR("dwm.tagsnormfgcolor", tagsnormfgcolor);
+				XRDB_LOAD_COLOR("dwm.tagsnormbgcolor", tagsnormbgcolor);
+				XRDB_LOAD_COLOR("dwm.tagsnormbordercolor", tagsnormbordercolor);
+				XRDB_LOAD_COLOR("dwm.tagsnormfloatcolor", tagsnormfloatcolor);
+				XRDB_LOAD_COLOR("dwm.tagsselfgcolor", tagsselfgcolor);
+				XRDB_LOAD_COLOR("dwm.tagsselbgcolor", tagsselbgcolor);
+				XRDB_LOAD_COLOR("dwm.tagsselbordercolor", tagsselbordercolor);
+				XRDB_LOAD_COLOR("dwm.tagsselfloatcolor", tagsselfloatcolor);
+				XRDB_LOAD_COLOR("dwm.hidnormfgcolor", hidnormfgcolor);
+				XRDB_LOAD_COLOR("dwm.hidnormbgcolor", hidnormbgcolor);
+				XRDB_LOAD_COLOR("dwm.hidselfgcolor", hidselfgcolor);
+				XRDB_LOAD_COLOR("dwm.hidselbgcolor", hidselbgcolor);
+				XRDB_LOAD_COLOR("dwm.urgfgcolor", urgfgcolor);
+				XRDB_LOAD_COLOR("dwm.urgbgcolor", urgbgcolor);
+				XRDB_LOAD_COLOR("dwm.urgbordercolor", urgbordercolor);
+				XRDB_LOAD_COLOR("dwm.urgfloatcolor", urgfloatcolor);
 
 				XrmDestroyDatabase(xrdb);
 			}

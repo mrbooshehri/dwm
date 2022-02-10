@@ -2,8 +2,6 @@
 #include "bar_indicators.c"
 #include "bar_tagicons.c"
 
-#include "bar_alternativetags.c"
-#include "bar_anybar.c"
 #include "bar_dwmblocks.c"
 #include "bar_ewmhtags.c"
 #include "combo.c"
@@ -14,46 +12,21 @@
 #include "bar_tags.c"
 #include "bar_wintitle.c"
 #include "bar_systray.c"
-#include "bar_layoutmenu.c"
 
 /* Other patches */
 #include "attachx.c"
 #include "autostart.c"
-#include "cmdcustomize.c"
-#include "cyclelayouts.c"
 #include "decorationhints.c"
 #include "dwmc.c"
-#include "fullscreen.c"
-#include "inplacerotate.c"
-#include "ipc.c"
-#ifdef VERSION
-#include "ipc/IPCClient.c"
-#include "ipc/yajl_dumps.c"
-#include "ipc/ipc.c"
-#include "ipc/util.c"
-#endif
-#include "mpdcontrol.c"
-#include "movestack.c"
+#include "fakefullscreenclient.c"
 #include "pertag.c"
-#include "placemouse.c"
-#include "rotatestack.c"
-#include "selfrestart.c"
-#ifdef XINERAMA
-#include "sortscreens.c"
-#endif // XINERAMA
 #include "swallow.c"
-#include "tagallmon.c"
 #include "vanitygaps.c"
 #include "xkb.c"
 #include "xrdb.c"
 /* Layouts */
 #include "layout_facts.c"
-#include "layout_bstack.c"
-#include "layout_bstackhoriz.c"
 #include "layout_centeredmaster.c"
-#include "layout_centeredfloatingmaster.c"
-#include "layout_deck.c"
-#include "layout_grid.c"
 #include "layout_monocle.c"
 #include "layout_tile.c"
 
