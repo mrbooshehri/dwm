@@ -90,7 +90,7 @@ static char *colors[][ColCount] = {
 };
 
 
-static const char *layoutmenu_cmd = "/home/mhmd/suckless/dwm/layoutmenu.sh";
+static const char *layoutmenu_cmd = "/home/mhmd/Reops/github.com/mrbooshehri/dwm/layoutmenu.sh";
 
 
 
@@ -262,7 +262,7 @@ static const char *xkb_layouts[]  = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 /* This defines the name of the executable that handles the bar (used for signalling purposes) */
 #define STATUSBAR "dwmblocks"
@@ -270,7 +270,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key            function                argument */
-	{ MODKEY,	                XK_Return,     spawn,                  {.v = termcmd } },
+	{ MODKEY,	                			XK_Return,     spawn,                  {.v = termcmd } },
 	{ MODKEY,                       XK_b,          togglebar,              {0} },
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
@@ -281,12 +281,12 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,           XK_Return,     zoom,                   {0} },
 	{ MODKEY,                       XK_Tab,        view,                   {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,          quit,                   {0} },
-	{ MODKEY|ShiftMask,		XK_q,          killclient,             {0} },
+	{ MODKEY|ShiftMask,							XK_q,          killclient,             {0} },
 	{ MODKEY|ShiftMask,             XK_t,          setlayout,              {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_f,          setlayout,              {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_m,          setlayout,              {.v = &layouts[2]} },
-	{ MODKEY,			XK_space,      togglefloating,         {0} },
-	{ MODKEY,                       XK_0,	       view,                   {.ui = ~0 } },
+	{ MODKEY,												XK_space,      togglefloating,         {0} },
+	{ MODKEY,                       XK_0,	       	 view,                   {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,          tag,                    {.ui = ~0 } },
 	TAGKEYS(                        XK_1,                                  0)
 	TAGKEYS(                        XK_2,                                  1)
@@ -304,7 +304,7 @@ static Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask           button          function        argument */
-	{ ClkButton,            0,                   Button1,        spawn,          SHCMD("/home/mhmd/scripts/xmenu/xmenu-powermenu.sh") },
+	{ ClkButton,            0,                   Button1,        spawn,          SHCMD("/home/mhmd/Repos/github.com/mrbooshehri/dot/scripts/xmenu/xmenu-powermenu.sh") },
 	{ ClkLtSymbol,          0,                   Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,                   Button3,        layoutmenu,     {0} },
 	{ ClkWinTitle,          0,                   Button2,        zoom,           {0} },
